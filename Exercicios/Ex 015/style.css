@@ -1,0 +1,17 @@
+
+
+body {
+    background-color: rgb(22, 21, 21);
+}
+h1 {
+    color: darkblue;
+    background-color: lightblue;
+    text-align: center;
+}
+h2 {
+    color: red;
+}
+p {
+    text-align: justify;
+    color: aliceblue;
+}
