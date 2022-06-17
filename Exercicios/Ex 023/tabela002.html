@@ -12,6 +12,7 @@
         table{
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
         td, th{
             border: 1px solid black;
@@ -21,8 +22,21 @@
             background-color: grey;
             color: white;
         }
+        thead>tr>th{
+            position: sticky;
+            top: 0;
+            background-color: grey;
+        }
         .num{
             text-align: right;
+        }
+        caption{
+            background-color: lightgray;
+            padding: 10px;
+            font-weight: bolder;
+        }
+        tbody>tr:nth-child(2n){
+            background-color: lightgray;
         }
     </style>
 </head>
@@ -30,7 +44,8 @@
     <h1>Uso de tabelas grandes</h1>
     <!--
         Anatomia para tabelas grandes
-        Table
+        Table  
+            CAPTION
             THEAD
                 TR, TD, TH
             TBOODY
@@ -39,14 +54,102 @@
                 TR, TD, TH
     -->
     <table>
-        <thead>
+        <caption>População da unidades federativas</caption>
+        
+        <tr>
+            <th scope="col">Estado</th> 
+            <th scope="col" style="width: 50px;">População</th>
+        </tr>
             <tr>
-               <th>Estado</th> 
-               <th>População</th>
+                <td>São Paulo</td>
+                <td class="num" id="num1">41 262 199</td>
             </tr>
-        </thead>
-        <tbody>
             <tr>
+                <td>Minas Gerais</td>
+                <td class="num" id="num2">19 597 330</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num" id="num3">15 989 929</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num" id="num1">41 262 199</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num" id="num2">19 597 330</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num" id="num3">15 989 929</td>
+            </tr><tr>
+                <td>São Paulo</td>
+                <td class="num" id="num1">41 262 199</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num" id="num2">19 597 330</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num" id="num3">15 989 929</td>
+            </tr><tr>
+                <td>São Paulo</td>
+                <td class="num" id="num1">41 262 199</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num" id="num2">19 597 330</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num" id="num3">15 989 929</td>
+            </tr><tr>
+                <td>São Paulo</td>
+                <td class="num" id="num1">41 262 199</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num" id="num2">19 597 330</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num" id="num3">15 989 929</td>
+            </tr><tr>
+                <td>São Paulo</td>
+                <td class="num" id="num1">41 262 199</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num" id="num2">19 597 330</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num" id="num3">15 989 929</td>
+            </tr><tr>
+                <td>São Paulo</td>
+                <td class="num" id="num1">41 262 199</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num" id="num2">19 597 330</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num" id="num3">15 989 929</td>
+            </tr><tr>
+                <td>São Paulo</td>
+                <td class="num" id="num1">41 262 199</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num" id="num2">19 597 330</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num" id="num3">15 989 929</td>
+            </tr><tr>
                 <td>São Paulo</td>
                 <td class="num" id="num1">41 262 199</td>
             </tr>
@@ -61,17 +164,57 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de habitante</th>
+                <th scope="row">Total de habitante</th>
                 <td class="num" id="res">0000</td>
             </tr>
         </tfoot>
     </table>
-    <script>
-        var n1=#num1
-        var n2=#num2
-        var n3=#num3
-        var res=#res
-    </script>
-
-</body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, blanditiis. Quis cumque culpa fugit illo! Laborum sapiente asperiores obcaecati incidunt consequatur aut ut, natus ipsam, pariatur doloribus illo eaque maiores!
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam, temporibus architecto? Consequuntur enim numquam ut maiores ab doloremque consequatur voluptate, quae veritatis impedit dolorem ex necessitatibus deserunt harum architecto vero!Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, blanditiis. Quis cumque culpa fugit illo! Laborum sapiente asperiores obcaecati incidunt consequatur aut ut, natus ipsam, pariatur doloribus illo eaque maiores!
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam, temporibus architecto? Consequuntur enim numquam ut maiores ab doloremque consequatur voluptate, quae veritatis impedit dolorem ex necessitatibus deserunt harum architecto vero!
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, blanditiis. Quis cumque culpa fugit illo! Laborum sapiente asperiores obcaecati incidunt consequatur aut ut, natus ipsam, pariatur doloribus illo eaque maiores!
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam, temporibus architecto? Consequuntur enim numquam ut maiores ab doloremque consequatur voluptate, quae veritatis impedit dolorem ex necessitatibus deserunt harum architecto vero!Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, blanditiis. Quis cumque culpa fugit illo! Laborum sapiente asperiores obcaecati incidunt consequatur aut ut, natus ipsam, pariatur doloribus illo eaque maiores!
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam, temporibus architecto? Consequuntur enim numquam ut maiores ab doloremque consequatur voluptate, quae veritatis impedit dolorem ex necessitatibus deserunt harum architecto vero!
+    </p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, blanditiis. Quis cumque culpa fugit illo! Laborum sapiente asperiores obcaecati incidunt consequatur aut ut, natus ipsam, pariatur doloribus illo eaque maiores!
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam, temporibus architecto? Consequuntur enim numquam ut maiores ab doloremque consequatur voluptate, quae veritatis impedit dolorem ex necessitatibus deserunt harum architecto vero!Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, blanditiis. Quis cumque culpa fugit illo! Laborum sapiente asperiores obcaecati incidunt consequatur aut ut, natus ipsam, pariatur doloribus illo eaque maiores!
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam, temporibus architecto? Consequuntur enim numquam ut maiores ab doloremque consequatur voluptate, quae veritatis impedit dolorem ex necessitatibus deserunt harum architecto vero!
+    </p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, blanditiis. Quis cumque culpa fugit illo! Laborum sapiente asperiores obcaecati incidunt consequatur aut ut, natus ipsam, pariatur doloribus illo eaque maiores!
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam, temporibus architecto? Consequuntur enim numquam ut maiores ab doloremque consequatur voluptate, quae veritatis impedit dolorem ex necessitatibus deserunt harum architecto vero!Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, blanditiis. Quis cumque culpa fugit illo! Laborum sapiente asperiores obcaecati incidunt consequatur aut ut, natus ipsam, pariatur doloribus illo eaque maiores!
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam, temporibus architecto? Consequuntur enim numquam ut maiores ab doloremque consequatur voluptate, quae veritatis impedit dolorem ex necessitatibus deserunt harum architecto vero!
+    </p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, blanditiis. Quis cumque culpa fugit illo! Laborum sapiente asperiores obcaecati incidunt consequatur aut ut, natus ipsam, pariatur doloribus illo eaque maiores!
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam, temporibus architecto? Consequuntur enim numquam ut maiores ab doloremque consequatur voluptate, quae veritatis impedit dolorem ex necessitatibus deserunt harum architecto vero!Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, blanditiis. Quis cumque culpa fugit illo! Laborum sapiente asperiores obcaecati incidunt consequatur aut ut, natus ipsam, pariatur doloribus illo eaque maiores!
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam, temporibus architecto? Consequuntur enim numquam ut maiores ab doloremque consequatur voluptate, quae veritatis impedit dolorem ex necessitatibus deserunt harum architecto vero!
+    </p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, blanditiis. Quis cumque culpa fugit illo! Laborum sapiente asperiores obcaecati incidunt consequatur aut ut, natus ipsam, pariatur doloribus illo eaque maiores!
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam, temporibus architecto? Consequuntur enim numquam ut maiores ab doloremque consequatur voluptate, quae veritatis impedit dolorem ex necessitatibus deserunt harum architecto vero!Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, blanditiis. Quis cumque culpa fugit illo! Laborum sapiente asperiores obcaecati incidunt consequatur aut ut, natus ipsam, pariatur doloribus illo eaque maiores!
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam, temporibus architecto? Consequuntur enim numquam ut maiores ab doloremque consequatur voluptate, quae veritatis impedit dolorem ex necessitatibus deserunt harum architecto vero!
+    </p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, blanditiis. Quis cumque culpa fugit illo! Laborum sapiente asperiores obcaecati incidunt consequatur aut ut, natus ipsam, pariatur doloribus illo eaque maiores!
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam, temporibus architecto? Consequuntur enim numquam ut maiores ab doloremque consequatur voluptate, quae veritatis impedit dolorem ex necessitatibus deserunt harum architecto vero!Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, blanditiis. Quis cumque culpa fugit illo! Laborum sapiente asperiores obcaecati incidunt consequatur aut ut, natus ipsam, pariatur doloribus illo eaque maiores!
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam, temporibus architecto? Consequuntur enim numquam ut maiores ab doloremque consequatur voluptate, quae veritatis impedit dolorem ex necessitatibus deserunt harum architecto vero!
+    </p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, blanditiis. Quis cumque culpa fugit illo! Laborum sapiente asperiores obcaecati incidunt consequatur aut ut, natus ipsam, pariatur doloribus illo eaque maiores!
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam, temporibus architecto? Consequuntur enim numquam ut maiores ab doloremque consequatur voluptate, quae veritatis impedit dolorem ex necessitatibus deserunt harum architecto vero!Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, blanditiis. Quis cumque culpa fugit illo! Laborum sapiente asperiores obcaecati incidunt consequatur aut ut, natus ipsam, pariatur doloribus illo eaque maiores!
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam, temporibus architecto? Consequuntur enim numquam ut maiores ab doloremque consequatur voluptate, quae veritatis impedit dolorem ex necessitatibus deserunt harum architecto vero!
+    </p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, blanditiis. Quis cumque culpa fugit illo! Laborum sapiente asperiores obcaecati incidunt consequatur aut ut, natus ipsam, pariatur doloribus illo eaque maiores!
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam, temporibus architecto? Consequuntur enim numquam ut maiores ab doloremque consequatur voluptate, quae veritatis impedit dolorem ex necessitatibus deserunt harum architecto vero!Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, blanditiis. Quis cumque culpa fugit illo! Laborum sapiente asperiores obcaecati incidunt consequatur aut ut, natus ipsam, pariatur doloribus illo eaque maiores!
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam, temporibus architecto? Consequuntur enim numquam ut maiores ab doloremque consequatur voluptate, quae veritatis impedit dolorem ex necessitatibus deserunt harum architecto vero!
+    </p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, blanditiis. Quis cumque culpa fugit illo! Laborum sapiente asperiores obcaecati incidunt consequatur aut ut, natus ipsam, pariatur doloribus illo eaque maiores!
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam, temporibus architecto? Consequuntur enim numquam ut maiores ab doloremque consequatur voluptate, quae veritatis impedit dolorem ex necessitatibus deserunt harum architecto vero!Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, blanditiis. Quis cumque culpa fugit illo! Laborum sapiente asperiores obcaecati incidunt consequatur aut ut, natus ipsam, pariatur doloribus illo eaque maiores!
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam, temporibus architecto? Consequuntur enim numquam ut maiores ab doloremque consequatur voluptate, quae veritatis impedit dolorem ex necessitatibus deserunt harum architecto vero!
+    </p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, blanditiis. Quis cumque culpa fugit illo! Laborum sapiente asperiores obcaecati incidunt consequatur aut ut, natus ipsam, pariatur doloribus illo eaque maiores!
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam, temporibus architecto? Consequuntur enim numquam ut maiores ab doloremque consequatur voluptate, quae veritatis impedit dolorem ex necessitatibus deserunt harum architecto vero!Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, blanditiis. Quis cumque culpa fugit illo! Laborum sapiente asperiores obcaecati incidunt consequatur aut ut, natus ipsam, pariatur doloribus illo eaque maiores!
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam, temporibus architecto? Consequuntur enim numquam ut maiores ab doloremque consequatur voluptate, quae veritatis impedit dolorem ex necessitatibus deserunt harum architecto vero!
+    </p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, blanditiis. Quis cumque culpa fugit illo! Laborum sapiente asperiores obcaecati incidunt consequatur aut ut, natus ipsam, pariatur doloribus illo eaque maiores!
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam, temporibus architecto? Consequuntur enim numquam ut maiores ab doloremque consequatur voluptate, quae veritatis impedit dolorem ex necessitatibus deserunt harum architecto vero!Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, blanditiis. Quis cumque culpa fugit illo! Laborum sapiente asperiores obcaecati incidunt consequatur aut ut, natus ipsam, pariatur doloribus illo eaque maiores!
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam, temporibus architecto? Consequuntur enim numquam ut maiores ab doloremque consequatur voluptate, quae veritatis impedit dolorem ex necessitatibus deserunt harum architecto vero!
+    </p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, blanditiis. Quis cumque culpa fugit illo! Laborum sapiente asperiores obcaecati incidunt consequatur aut ut, natus ipsam, pariatur doloribus illo eaque maiores!
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam, temporibus architecto? Consequuntur enim numquam ut maiores ab doloremque consequatur voluptate, quae veritatis impedit dolorem ex necessitatibus deserunt harum architecto vero!Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, blanditiis. Quis cumque culpa fugit illo! Laborum sapiente asperiores obcaecati incidunt consequatur aut ut, natus ipsam, pariatur doloribus illo eaque maiores!
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam, temporibus architecto? Consequuntur enim numquam ut maiores ab doloremque consequatur voluptate, quae veritatis impedit dolorem ex necessitatibus deserunt harum architecto vero!
+    </p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, blanditiis. Quis cumque culpa fugit illo! Laborum sapiente asperiores obcaecati incidunt consequatur aut ut, natus ipsam, pariatur doloribus illo eaque maiores!
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam, temporibus architecto? Consequuntur enim numquam ut maiores ab doloremque consequatur voluptate, quae veritatis impedit dolorem ex necessitatibus deserunt harum architecto vero!Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, blanditiis. Quis cumque culpa fugit illo! Laborum sapiente asperiores obcaecati incidunt consequatur aut ut, natus ipsam, pariatur doloribus illo eaque maiores!
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam, temporibus architecto? Consequuntur enim numquam ut maiores ab doloremque consequatur voluptate, quae veritatis impedit dolorem ex necessitatibus deserunt harum architecto vero!
+    </p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, blanditiis. Quis cumque culpa fugit illo! Laborum sapiente asperiores obcaecati incidunt consequatur aut ut, natus ipsam, pariatur doloribus illo eaque maiores!
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam, temporibus architecto? Consequuntur enim numquam ut maiores ab doloremque consequatur voluptate, quae veritatis impedit dolorem ex necessitatibus deserunt harum architecto vero!Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, blanditiis. Quis cumque culpa fugit illo! Laborum sapiente asperiores obcaecati incidunt consequatur aut ut, natus ipsam, pariatur doloribus illo eaque maiores!
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam, temporibus architecto? Consequuntur enim numquam ut maiores ab doloremque consequatur voluptate, quae veritatis impedit dolorem ex necessitatibus deserunt harum architecto vero!
+    </p>
+  </body>
 </html>
